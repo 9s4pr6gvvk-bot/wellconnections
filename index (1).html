@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Well Connections | Counselling, Therapy & Coaching in Harrogate, Leeds, York & Yorkshire</title>
+  <meta name="description" content="Well Connections matches you with trusted Counsellors, Therapists and Coaches across Yorkshire & the North East — with no waiting lists. Face-to-face in Harrogate, Leeds, York or online across the UK." />
+  <meta name="keywords" content="therapy Harrogate, counselling Leeds, therapist York, well-being Yorkshire, couples counselling, child therapy, coaching, mental health" />
+  <link rel="canonical" href="https://wellconnections.co.uk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Well Connections | Expert Therapy, Counselling & Coaching" />
+  <meta property="og:description" content="No waiting lists. Personally matched with trusted therapists across Yorkshire & the North East." />
+  <meta property="og:image" content="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Bold-Slim-Logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Well Connections",
+    "description": "Counselling, Therapy and Coaching with no waiting lists across Yorkshire and the North East",
+    "telephone": ["07725035029", "07736317617"],
+    "email": "info@wellconnections.co.uk",
+    "url": "https://wellconnections.co.uk",
+    "areaServed": ["Harrogate", "Leeds", "York", "Yorkshire", "Darlington", "Teesside", "North East England"],
+    "serviceType": ["Counselling", "Psychotherapy", "Coaching", "Wellbeing", "Child and Teen Therapy", "Couples Counselling"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:       #5a8a6a;
+      --sage-dark:  #3d6b52;
+      --sage-light: #b8d4c4;
+      --sage-pale:  #e8f2ec;
+      --cream:      #f4f7f5;
+      --warm-white: #ffffff;
+      --stone:      #e4eae7;
+      --bark:       #5c7268;
+      --bark-dark:  #1e3028;
+      --text:       #1a2820;
+      --text-muted: #5a6b63;
+      --gold:       #9aab8a;
+      --teal:       #2d6e5e;
+      --teal-light: #e0eeea;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: #ffffff;
+      color: var(--text);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(90, 138, 106, 0.12);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 30px rgba(0,0,0,0.08); }
+
+    .nav-logo img {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--sage-dark); }
+
+    .nav-cta {
+      background: var(--sage);
+      color: #fff !important;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2px;
+      font-weight: 500 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--sage-dark) !important; color: #fff !important; }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1645374158583-90ef17f789ee?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center 30%;
+      filter: brightness(0.52) saturate(0.85);
+      transform: scale(1.04);
+      animation: slowZoom 18s ease-out forwards;
+    }
+    @keyframes slowZoom {
+      from { transform: scale(1.04); }
+      to   { transform: scale(1.00); }
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        125deg,
+        rgba(20, 40, 28, 0.65) 0%,
+        rgba(45, 110, 94, 0.3) 55%,
+        rgba(30, 48, 40, 0.2) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      padding: 0 6% 0 8%;
+      animation: heroFadeUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+    }
+    @keyframes heroFadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(200, 216, 201, 0.25);
+      border: 1px solid rgba(200, 216, 201, 0.6);
+      color: #d8ead9;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--sage-light);
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--sage);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.25s, transform 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--sage-dark); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      border: 1px solid rgba(255,255,255,0.5);
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .btn-secondary:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hero-scroll span {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 0.8; transform: scaleY(1.1); }
+    }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--bark-dark);
+      color: rgba(255,255,255,0.9);
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.07em;
+      font-weight: 400;
+    }
+    .trust-item svg { flex-shrink: 0; color: var(--sage-light); }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 5%; }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--sage);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--bark-dark);
+      margin-bottom: 1.2rem;
+    }
+    .section-title em { font-style: italic; color: var(--teal); }
+
+    .section-body {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    /* ── ABOUT SPLIT ── */
+    .about-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-image-wrap {
+      position: relative;
+    }
+    .about-image-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .about-image-accent {
+      position: absolute;
+      top: -1.5rem;
+      left: -1.5rem;
+      width: 60%;
+      height: 60%;
+      border: 2px solid var(--sage-light);
+      border-radius: 2px;
+      z-index: -1;
+    }
+    .about-image-badge {
+      position: absolute;
+      bottom: 2rem;
+      right: -2rem;
+      background: var(--teal);
+      color: #fff;
+      padding: 1.2rem 1.5rem;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(30,48,40,0.2);
+    }
+    .about-image-badge .big { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; display: block; line-height: 1; }
+    .about-image-badge .small { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.85; }
+
+    .about-text { padding-right: 2rem; }
+    .about-text .section-body { margin-bottom: 2rem; max-width: none; }
+
+    .check-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .check-list li::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%232d6e5e'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat center / contain;
+      margin-top: 2px;
+    }
+
+    /* ── SERVICES ── */
+    .services-section {
+      background: var(--cream);
+      padding: 6rem 5%;
+    }
+    .services-header {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 4rem;
+    }
+    .services-header .section-body { margin: 0 auto; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 4px;
+      padding: 2.2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--stone);
+      border-top: 3px solid var(--sage);
+      box-shadow: 0 2px 12px rgba(30,48,40,0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-top-color 0.25s;
+      cursor: default;
+      position: relative;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(30,48,40,0.10);
+      border-top-color: var(--teal);
+    }
+
+    .service-icon {
+      width: 46px;
+      height: 46px;
+      background: var(--teal-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      transition: background 0.25s;
+    }
+    .service-card:hover .service-icon { background: var(--sage-light); }
+    .service-icon svg { color: var(--teal); }
+
+    .service-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--bark-dark);
+      margin-bottom: 0.65rem;
+      letter-spacing: 0.01em;
+    }
+    .service-card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      flex: 1;
+    }
+    .service-card-link {
+      margin-top: 1.2rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: gap 0.2s;
+    }
+    .service-card:hover .service-card-link { gap: 0.6rem; }
+
+    .services-cta-row {
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .services-cta-row p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how-section {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .how-header { margin-bottom: 4rem; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 2.1rem;
+      left: 16%;
+      right: 16%;
+      height: 1px;
+      background: var(--stone);
+    }
+
+    .step { text-align: center; }
+    .step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--sage-light);
+      color: var(--teal);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .step h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--bark-dark);
+      margin-bottom: 0.6rem;
+    }
+    .step p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ── TESTIMONIAL ── */
+    .testimonial-section {
+      background: var(--teal);
+      position: relative;
+      overflow: hidden;
+    }
+    .testimonial-section::before {
+      content: '\201C';
+      position: absolute;
+      top: -1rem;
+      left: 4%;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18rem;
+      color: rgba(255,255,255,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .testimonial-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .testimonial-inner blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 300;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.55;
+      margin-bottom: 2rem;
+    }
+    .testimonial-inner cite {
+      font-style: normal;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--sage-light);
+      font-weight: 400;
+    }
+    .testimonial-stars {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 1.5rem;
+    }
+    .testimonial-stars svg { color: var(--gold); }
+
+    /* ── LOCATIONS ── */
+    .locations-section { background: var(--cream); }
+    .locations-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .location-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .location-tag {
+      background: #fff;
+      border: 1px solid var(--stone);
+      color: var(--teal);
+      padding: 0.45rem 1rem;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+    }
+    .online-note {
+      background: var(--teal-light);
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      font-size: 0.9rem;
+      color: var(--teal);
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      border: 1px solid var(--sage-light);
+    }
+    .online-note svg { flex-shrink: 0; margin-top: 2px; }
+    .locations-right { padding-top: 1rem; }
+
+    /* ── CONTACT / CTA ── */
+    .cta-section {
+      background: var(--bark-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=60') center/cover;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .cta-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-left .section-title { color: #fff; }
+    .cta-left .section-body { color: rgba(255,255,255,0.7); max-width: none; margin-bottom: 2rem; }
+
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .contact-method:hover { color: var(--sage-light); }
+    .contact-method svg { color: var(--sage-light); flex-shrink: 0; }
+
+    /* ── FORM ── */
+    .enquiry-form {
+      background: rgba(253, 250, 246, 0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 2px;
+      padding: 2.5rem;
+    }
+    .enquiry-form h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 2px;
+      padding: 0.75rem 1rem;
+      color: #fff;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--sage-light);
+      background: rgba(255,255,255,0.12);
+    }
+    .form-group select { cursor: pointer; }
+    .form-group select option { background: var(--bark-dark); color: #fff; }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-submit {
+      width: 100%;
+      background: var(--sage);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 2px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.92rem;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+      margin-top: 0.5rem;
+    }
+    .form-submit:hover { background: var(--sage-dark); transform: translateY(-1px); }
+
+    .form-privacy {
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bark-dark);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+    footer a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--sage-light); }
+
+    /* ── SUCCESS MSG ── */
+    .form-success {
+      display: none;
+      background: rgba(107, 140, 110, 0.2);
+      border: 1px solid var(--sage-light);
+      border-radius: 2px;
+      padding: 1.5rem;
+      color: var(--sage-light);
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: var(--warm-white);
+      border-top: 1px solid var(--stone);
+      padding: 1.5rem 5%;
+      z-index: 99;
+      flex-direction: column;
+      gap: 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--stone);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu .mobile-cta {
+      margin-top: 1rem;
+      background: var(--sage);
+      color: #fff !important;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 2px;
+      font-weight: 500;
+      border: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .about-split,
+      .steps,
+      .locations-wrap,
+      .cta-inner { grid-template-columns: 1fr; gap: 3rem; }
+
+      .services-grid { grid-template-columns: 1fr 1fr; }
+
+      .about-image-badge { right: 1rem; }
+      .about-text { padding-right: 0; }
+
+      .steps::before { display: none; }
+
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 4rem 5%; }
+      .services-section { padding: 4rem 5%; }
+      .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .hero-content { padding: 0 5%; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn-primary, .btn-secondary { text-align: center; }
+      .trust-bar { gap: 1rem 2rem; padding: 1.2rem 5%; justify-content: flex-start; }
+      .trust-item { font-size: 0.75rem; }
+      footer { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .cta-inner { gap: 2.5rem; }
+      .about-image-badge { display: none; }
+      .about-image-accent { display: none; }
+      .nav-logo img { height: 52px; }
+      .service-card { padding: 1.75rem 1.5rem; }
+    }
+
+    @media (max-width: 400px) {
+      .trust-bar { flex-direction: column; gap: 0.6rem; }
+      .hero h1 { font-size: 2.4rem; }
+    }
+
+    /* ── FADE-IN ANIMATIONS ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav id="navbar">
+  <a href="/" class="nav-logo" aria-label="Well Connections Home">
+    <img src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Bold-Slim-Logo.png"
+         alt="Well Connections Logo" />
+  </a>
+  <ul class="nav-links" role="navigation" aria-label="Main navigation">
+    <li><a href="#services">Therapy Teams</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#locations">Locations</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://calendly.com/wellconnections/consultation" class="nav-cta" target="_blank" rel="noopener">Free 20-Min Call</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation">
+  <a href="#services">Therapy Teams</a>
+  <a href="#about">About Us</a>
+  <a href="#locations">Locations</a>
+  <a href="#contact">Contact</a>
+  <a href="https://calendly.com/wellconnections/consultation" class="mobile-cta" target="_blank" rel="noopener">Free 20-Min Call →</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" role="banner">
+  <div class="hero-bg" role="img" aria-label="Woodland path in sunlight"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">No waiting lists</span>
+    <h1>Expert care,<br /><em>tailored to you.</em></h1>
+    <p>We connect you with trusted Counsellors, Therapists and Coaches — matching you with the right person to help you navigate life's challenges.</p>
+    <div class="hero-actions">
+      <a href="https://calendly.com/wellconnections/consultation" class="btn-primary" target="_blank" rel="noopener">
+        Schedule a Free 20-Min Call
+      </a>
+      <a href="#contact" class="btn-secondary">Send an Enquiry</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Explore</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- ═══ TRUST BAR ═══ -->
+<div class="trust-bar" role="complementary" aria-label="Key features">
+  <div class="trust-item">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+    No Waiting Lists
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+    Personally Vetted Therapists
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+    Face-to-Face &amp; Online
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+    Confidential &amp; Safe
+  </div>
+  <div class="trust-item">
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+    Free Initial Consultation
+  </div>
+</div>
+
+<!-- ═══ ABOUT / INTRO ═══ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="about-split">
+    <div class="about-image-wrap fade-up">
+      <div class="about-image-accent" aria-hidden="true"></div>
+      <img src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Two-Women-Talking-in-a-Therapy-Session.png"
+           alt="Two women in a therapy session at Well Connections"
+           loading="lazy" />
+      <div class="about-image-badge" aria-hidden="true">
+        <span class="big">6</span>
+        <span class="small">Specialist Teams</span>
+      </div>
+    </div>
+    <div class="about-text fade-up">
+      <span class="section-label">About Us</span>
+      <h2 id="about-heading" class="section-title">The right match<br /><em>changes everything.</em></h2>
+      <p class="section-body">At Well Connections, we understand that finding the right support for individuals, families, and organisations can feel overwhelming. That's why we personally guide you to the right counsellor, therapist or coach — someone who truly fits your needs.</p>
+      <p class="section-body" style="margin-top:1rem;">We personally know each of our therapists, carefully checking their credentials and experience to ensure a strong therapeutic alliance that fosters trust, engagement, and positive outcomes.</p>
+      <ul class="check-list" style="margin-top:1.5rem;" role="list">
+        <li>Carefully selected, credential-verified specialists</li>
+        <li>Personalised matching to your unique situation</li>
+        <li>A safe, confidential space for every session</li>
+        <li>Support for individuals, couples, children &amp; organisations</li>
+      </ul>
+      <a href="https://calendly.com/wellconnections/consultation" class="btn-primary" target="_blank" rel="noopener">Book a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services" class="services-section" aria-labelledby="services-heading">
+  <div class="services-header fade-up">
+    <span class="section-label">Therapy Teams</span>
+    <h2 id="services-heading" class="section-title">Choose the support<br /><em>that's right for you.</em></h2>
+    <p class="section-body">Whatever you're navigating, we have a specialist team ready to help. All services available face-to-face across Yorkshire and online throughout the UK.</p>
+  </div>
+
+  <div class="services-grid" role="list">
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+      </div>
+      <h3>Adult Therapy</h3>
+      <p>One-to-one counselling for anxiety, depression, stress, trauma, grief, and life transitions. A safe, confidential space to explore, heal, and grow at your own pace.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+      </div>
+      <h3>Wellbeing</h3>
+      <p>Proactive support for emotional balance, resilience, and flourishing — ideal for those who want to strengthen mental well-being before difficulties escalate.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+      </div>
+      <h3>Child &amp; Teen Therapy</h3>
+      <p>Specialist support for young people aged 5–18 facing anxiety, school pressure, self-esteem challenges, family change, and emotional difficulties.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+      </div>
+      <h3>Couples Counselling</h3>
+      <p>Rebuild connection and improve communication. Navigate relationship challenges together with a specialist couples therapist in a neutral, supported space.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+      </div>
+      <h3>Parenting Support</h3>
+      <p>Tailored guidance for parents navigating family life — including managing behaviour, relationship dynamics, and the pressures of modern parenting.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="service-card fade-up" role="listitem">
+      <div class="service-icon" aria-hidden="true">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+      </div>
+      <h3>Coaching</h3>
+      <p>Goal-focused coaching for personal and professional growth — helping you move forward with clarity, purpose, and confidence in all areas of life.</p>
+      <a href="#contact" class="service-card-link">Enquire <span aria-hidden="true">→</span></a>
+    </article>
+  </div>
+
+  <div class="services-cta-row fade-up">
+    <p>Not sure which service is right for you? We'll help you find the best fit.</p>
+    <a href="https://calendly.com/wellconnections/consultation" class="btn-primary" target="_blank" rel="noopener">Book a Free 20-Min Consultation</a>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section aria-labelledby="how-heading">
+  <div class="how-section">
+    <div class="how-header fade-up">
+      <span class="section-label">The Process</span>
+      <h2 id="how-heading" class="section-title">Getting started is<br /><em>simple.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-num" aria-label="Step 1">1</div>
+        <h3>Get in touch</h3>
+        <p>Call, email, or book a free 20-minute consultation. Tell us a little about what you're looking for.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num" aria-label="Step 2">2</div>
+        <h3>We match you</h3>
+        <p>We personally recommend the right specialist from our vetted team — someone well-suited to your situation and goals.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num" aria-label="Step 3">3</div>
+        <h3>Begin your journey</h3>
+        <p>Start sessions at a pace that suits you — face-to-face across Yorkshire or online from anywhere in the UK.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIAL ═══ -->
+<section class="testimonial-section" aria-label="Client testimonial">
+  <div class="testimonial-inner fade-up">
+    <div class="testimonial-stars" aria-label="5 stars" role="img">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+    </div>
+    <blockquote>
+      "I wanted to thank you for helping me through a really tough time. I know I am still vulnerable to anxiety and stress but I've learnt a lot about myself and feel more confident understanding how I tick and why I react to things the way I do. I owe that to you."
+    </blockquote>
+    <cite>Therapy Client, Well Connections</cite>
+  </div>
+</section>
+
+<!-- ═══ LOCATIONS ═══ -->
+<section id="locations" class="locations-section" aria-labelledby="locations-heading">
+  <div class="locations-wrap">
+    <div class="fade-up">
+      <span class="section-label">Where We Are</span>
+      <h2 id="locations-heading" class="section-title">Across Yorkshire<br /><em>&amp; the North East.</em></h2>
+      <p class="section-body">We offer face-to-face sessions across a wide area, meaning you can access excellent therapy close to home.</p>
+      <div class="location-tags" role="list" aria-label="Available locations">
+        <span class="location-tag" role="listitem">Harrogate</span>
+        <span class="location-tag" role="listitem">Leeds</span>
+        <span class="location-tag" role="listitem">York</span>
+        <span class="location-tag" role="listitem">Yorkshire</span>
+        <span class="location-tag" role="listitem">Darlington</span>
+        <span class="location-tag" role="listitem">Teesside</span>
+        <span class="location-tag" role="listitem">North East</span>
+      </div>
+      <div class="online-note" role="note">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3"/></svg>
+        <span><strong>Prefer online?</strong> Our specialists are available for virtual sessions to clients anywhere across the UK.</span>
+      </div>
+    </div>
+    <div class="locations-right fade-up">
+      <span class="section-label">Companies &amp; Organisations</span>
+      <h3 class="section-title" style="font-size:1.8rem;">Support for<br /><em>workplaces too.</em></h3>
+      <p class="section-body">We work with companies and organisations to provide employee well-being programmes, counselling referral services, and workplace coaching.</p>
+      <a href="mailto:info@wellconnections.co.uk" class="btn-primary" style="margin-top:2rem; display:inline-block;">Enquire for Your Organisation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT / CTA ═══ -->
+<section id="contact" class="cta-section" aria-labelledby="contact-heading">
+  <div class="cta-inner">
+    <div class="cta-left">
+      <span class="section-label" style="color:var(--sage-light);">Get in Touch</span>
+      <h2 id="contact-heading" class="section-title">Ready to take<br /><em>the first step?</em></h2>
+      <p class="section-body">We're here to help you find the right support. Whether you're ready to book or just want to ask a question — reach out and we'll respond promptly.</p>
+
+      <div class="contact-methods">
+        <a href="https://calendly.com/wellconnections/consultation" class="contact-method" target="_blank" rel="noopener">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+          Schedule a free 20-minute call
+        </a>
+        <a href="mailto:info@wellconnections.co.uk" class="contact-method">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          info@wellconnections.co.uk
+        </a>
+        <a href="tel:07725035029" class="contact-method">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Andrea: 07725 035029
+        </a>
+        <a href="tel:07736317617" class="contact-method">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Sam: 07736 317617
+        </a>
+      </div>
+    </div>
+
+    <!-- FORMSPREE FORM -->
+    <div class="enquiry-form fade-up">
+      <h3>Send an Enquiry</h3>
+      <form id="enquiryForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Smith" autocomplete="family-name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="07700 000000" autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <label for="service">Type of Support</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select a service…</option>
+            <option value="Adult Therapy">Adult Therapy</option>
+            <option value="Wellbeing">Wellbeing</option>
+            <option value="Child & Teen Therapy">Child &amp; Teen Therapy</option>
+            <option value="Couples Counselling">Couples Counselling</option>
+            <option value="Parenting Support">Parenting Support</option>
+            <option value="Coaching">Coaching</option>
+            <option value="Organisations">Companies &amp; Organisations</option>
+            <option value="Not sure">Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us a little more (optional)</label>
+          <textarea id="message" name="message" placeholder="What are you hoping to get support with?"></textarea>
+        </div>
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="_subject" value="New Enquiry — Well Connections Website" />
+        <button type="submit" class="form-submit">Send Enquiry →</button>
+        <p class="form-privacy">Your details are kept strictly confidential and will never be shared with third parties.</p>
+      </form>
+      <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+        Thank you — we've received your enquiry and will be in touch very soon.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <p>© 2024 Well Connections. All rights reserved.</p>
+  <p>
+    Designed by <a href="https://melanieengland.com/" target="_blank" rel="noopener">Melanie England</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:info@wellconnections.co.uk">info@wellconnections.co.uk</a>
+    &nbsp;·&nbsp;
+    <a href="tel:07725035029">07725 035029</a>
+  </p>
+</footer>
+
+<script>
+  // ── NAV SCROLL STATE ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // ── HAMBURGER ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+
+  // ── INTERSECTION OBSERVER FOR FADE-UPS ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ── FORMSPREE AJAX SUBMIT ──
+  const form = document.getElementById('enquiryForm');
+  const successMsg = document.getElementById('formSuccess');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('.form-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
