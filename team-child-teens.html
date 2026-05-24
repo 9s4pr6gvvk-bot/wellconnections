@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child & Teens Therapy Team | Well Connections Yorkshire</title>
+  <meta name="description" content="Meet our specialist Child & Teen therapy team at Well Connections. Counsellors, psychotherapists and psychologists supporting young people aged 5–18 across Harrogate, Leeds, York and online." />
+  <link rel="canonical" href="https://wellconnections.co.uk/child-teens-therapy-team/" />
+  <meta property="og:title" content="Child & Teens Therapy Team | Well Connections" />
+  <meta property="og:description" content="Specialist therapists for young people aged 5–18 across Yorkshire and the North East." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sage:       #5a8a6a;
+      --sage-dark:  #3d6b52;
+      --sage-light: #b8d4c4;
+      --sage-pale:  #e8f2ec;
+      --cream:      #f4f7f5;
+      --stone:      #e4eae7;
+      --bark-dark:  #1e3028;
+      --text:       #1a2820;
+      --text-muted: #5a6b63;
+      --teal:       #2d6e5e;
+      --teal-light: #e0eeea;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: #fff;
+      color: var(--text);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 86px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(90,138,106,0.12);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 30px rgba(0,0,0,0.08); }
+
+    .nav-logo img { height: 72px; width: auto; display: block; }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--sage-dark); }
+    .nav-cta {
+      background: var(--sage) !important;
+      color: #fff !important;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2px;
+      font-weight: 500 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--sage-dark) !important; }
+
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+    }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--text); transition: all 0.3s; }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 86px; left: 0; right: 0;
+      background: #fff;
+      border-top: 1px solid var(--stone);
+      padding: 1.5rem 5%;
+      z-index: 99;
+      flex-direction: column;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--stone);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu .mobile-cta {
+      margin-top: 1rem;
+      background: var(--sage);
+      color: #fff !important;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      padding-top: 86px;
+      background: var(--bark-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1400&q=70') center/cover;
+      opacity: 0.12;
+    }
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 5% 4rem;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sage-light);
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumb a { color: var(--sage-light); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
+    .breadcrumb a:hover { opacity: 1; }
+    .breadcrumb span { opacity: 0.4; }
+
+    .page-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .page-hero h1 em { font-style: italic; color: var(--sage-light); }
+    .page-hero p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 620px;
+      line-height: 1.8;
+    }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      background: var(--cream);
+      border-bottom: 1px solid var(--stone);
+      padding: 1.1rem 5%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 86px;
+      z-index: 50;
+    }
+    .filter-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+    .filter-input {
+      flex: 1;
+      min-width: 200px;
+      max-width: 340px;
+      background: #fff;
+      border: 1px solid var(--stone);
+      border-radius: 2px;
+      padding: 0.6rem 1rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .filter-input:focus { border-color: var(--sage); }
+    .filter-input::placeholder { color: var(--text-muted); }
+    .filter-count {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    /* ── TEAM GRID ── */
+    .team-section {
+      padding: 4rem 5% 6rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .therapist-card {
+      background: #fff;
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 2px 8px rgba(30,48,40,0.04);
+    }
+    .therapist-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(30,48,40,0.10);
+    }
+
+    .therapist-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      background: var(--cream);
+    }
+
+    .therapist-img-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: linear-gradient(135deg, var(--teal-light) 0%, var(--sage-pale) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .therapist-img-placeholder svg { color: var(--sage-light); }
+
+    .therapist-body {
+      padding: 1.4rem 1.4rem 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .therapist-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--bark-dark);
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    .therapist-role {
+      font-size: 0.8rem;
+      color: var(--teal);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+    }
+
+    .therapist-creds {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      flex: 1;
+      border-top: 1px solid var(--stone);
+      padding-top: 0.75rem;
+      margin-top: 0.25rem;
+    }
+    .therapist-creds strong {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+      font-weight: 500;
+    }
+
+    .therapist-footer {
+      padding: 1rem 1.4rem 1.3rem;
+      border-top: 1px solid var(--stone);
+      margin-top: 0.75rem;
+    }
+    .therapist-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 500;
+      text-decoration: none;
+      transition: gap 0.2s;
+    }
+    .therapist-card:hover .therapist-link { gap: 0.65rem; }
+
+    /* ── NO RESULTS ── */
+    .no-results {
+      display: none;
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+    .no-results p { font-size: 1rem; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: var(--teal);
+      padding: 4rem 5%;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .cta-band h2 em { font-style: italic; color: var(--sage-light); }
+    .cta-band p {
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      font-size: 0.98rem;
+    }
+    .cta-band-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--sage);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--sage-dark); transform: translateY(-2px); }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      font-weight: 400;
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bark-dark);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 2rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer p { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+    footer a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--sage-light); }
+
+    /* ── FADE-UP ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1100px) {
+      .team-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .nav-logo img { height: 58px; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .therapist-body { padding: 1rem 1rem 0.75rem; }
+      .therapist-footer { padding: 0.75rem 1rem 1rem; }
+      .therapist-name { font-size: 1rem; }
+      .page-hero-inner { padding: 3.5rem 5% 3rem; }
+      .filter-bar { top: 76px; }
+      .cta-band-btns { flex-direction: column; align-items: center; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 380px) {
+      .team-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" aria-label="Well Connections Home">
+    <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/wellconnections/refs/heads/main/ChatGPT%20Image%20May%2022%2C%202026%2C%2012_43_42%20PM%20(1).png"
+         alt="Well Connections Logo" />
+  </a>
+  <ul class="nav-links" role="navigation" aria-label="Main navigation">
+    <li><a href="index.html#services">Therapy Teams</a></li>
+    <li><a href="index.html#about">About Us</a></li>
+    <li><a href="index.html#locations">Locations</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="https://calendly.com/wellconnections/consultation" class="nav-cta" target="_blank" rel="noopener">Free 20-Min Call</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="navigation">
+  <a href="index.html#services">Therapy Teams</a>
+  <a href="index.html#about">About Us</a>
+  <a href="index.html#locations">Locations</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="https://calendly.com/wellconnections/consultation" class="mobile-cta" target="_blank" rel="noopener">Free 20-Min Call →</a>
+</div>
+
+<!-- ═══ PAGE HERO ═══ -->
+<header class="page-hero">
+  <div class="page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <a href="index.html#services">Therapy Teams</a>
+      <span>›</span>
+      <span style="opacity:0.9;">Child &amp; Teens</span>
+    </nav>
+    <h1>Child &amp; Teens<br /><em>Therapy Team</em></h1>
+    <p>Our specialist team supports young people aged 5–18 with anxiety, school pressure, self-esteem, family change, and emotional difficulties. Every therapist is personally vetted by Well Connections.</p>
+  </div>
+</header>
+
+<!-- ═══ FILTER BAR ═══ -->
+<div class="filter-bar" role="search" aria-label="Search therapists">
+  <span class="filter-label">Filter</span>
+  <input
+    type="search"
+    class="filter-input"
+    id="therapistSearch"
+    placeholder="Search by name, role or qualification…"
+    aria-label="Search therapists"
+    autocomplete="off"
+  />
+  <span class="filter-count" id="filterCount">Showing <strong>26</strong> therapists</span>
+</div>
+
+<!-- ═══ TEAM GRID ═══ -->
+<main>
+<section class="team-section" aria-labelledby="team-heading">
+  <h2 id="team-heading" class="sr-only">Child &amp; Teens Therapy Team Members</h2>
+  <div class="team-grid" id="teamGrid">
+
+    <!-- AIVEEN SMITH -->
+    <article class="therapist-card fade-up" data-name="aiveen smith" data-role="forensic psychologist" data-creds="hcpc bps">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Aiveen-Smith.png" alt="Aiveen Smith — Chartered and Registered Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Aiveen Smith</h3>
+        <p class="therapist-role">Chartered &amp; Registered Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC · Chartered Member BPS · Associate Fellow BPS · BPS RAPPS · BSc · MSc · Qualification in Forensic Psychology
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/aiveen-smith/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- AMANDA ADAMSON -->
+    <article class="therapist-card fade-up" data-name="amanda adamson" data-role="psychotherapist" data-creds="bacp ma">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/11/Amanda-Adamson.png" alt="Amanda Adamson — Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Amanda Adamson</h3>
+        <p class="therapist-role">Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BACP · MA Family and Marriage Therapy
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/amanda-adamson/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- BECKY RODRIGUES -->
+    <article class="therapist-card fade-up" data-name="becky rodrigues" data-role="psychotherapist counsellor coach" data-creds="mbacp ba nlp">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Becky-Rodrigues.png" alt="Becky Rodrigues — Psychotherapist, Counsellor and Coach" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Becky Rodrigues</h3>
+        <p class="therapist-role">Psychotherapist, Counsellor &amp; Coach</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          MBACP · BA (Hons) · PG Dip · Dip Life Coaching · NLP Cert
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/becky-rodrigues/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- CARLA WISE -->
+    <article class="therapist-card fade-up" data-name="carla wise" data-role="dramatherapist clinical supervisor" data-creds="hcpc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Carla-Wise-1.png" alt="Carla Wise — Dramatherapist and Clinical Supervisor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Carla Wise</h3>
+        <p class="therapist-role">Dramatherapist &amp; Clinical Supervisor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC · Advanced Diploma
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/carla-wise/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- CHLOE LEES -->
+    <article class="therapist-card fade-up" data-name="chloe lees" data-role="play therapy" data-creds="ptuk psa apac">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/03/Chloe-Lees.png" alt="Chloe Lees — Play Therapy Practitioner" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Chloe Lees</h3>
+        <p class="therapist-role">Play Therapy Practitioner</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          PG Dip Therapeutic Play Skills (APAC) · PTUK &amp; PSA Accredited
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/chloe-lees/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- CLAIRE SULLIVAN -->
+    <article class="therapist-card fade-up" data-name="claire sullivan" data-role="psychotherapeutic counsellor" data-creds="bacp bed ma">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/10/Well-Connections-Clare-Sullivan.png" alt="Claire Sullivan — Psychotherapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Claire Sullivan</h3>
+        <p class="therapist-role">Psychotherapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BACP · BEd · MA Ed · Certificate in Creative Supervision · Diploma in Psychotherapeutic Counselling (Child &amp; Adolescent)
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/claire-sullivan/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- DR RACHEL ORR -->
+    <article class="therapist-card fade-up" data-name="dr rachel orr" data-role="clinical psychologist" data-creds="hcpc psychd">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/10/DR-RACHEL-ORR-1.png" alt="Dr Rachel Orr — Clinical Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Dr Rachel Orr</h3>
+        <p class="therapist-role">Clinical Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          PsychD · HCPC Registered
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/dr-rachel-orr/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- ELAINE COLLINS -->
+    <article class="therapist-card fade-up" data-name="elaine collins" data-role="therapeutic counsellor" data-creds="mbacp autism">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/03/Elaine-Collins2.png" alt="Elaine Collins — Therapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Elaine Collins</h3>
+        <p class="therapist-role">Therapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          MBACP · B.Ed · HE Cert · HE Diploma · NCFE Cache Level 2 Understanding Autism
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/elaine-collins/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- EMILY JACKSON -->
+    <article class="therapist-card fade-up" data-name="emily jackson" data-role="forensic psychologist" data-creds="hcpc msc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/12/Emily-Jackson-1.png" alt="Emily Jackson — Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Emily Jackson</h3>
+        <p class="therapist-role">Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC Registered · BA (Hons) Psychology &amp; Criminology · MSc
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/emily-jackson/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- EMMA YATES -->
+    <article class="therapist-card fade-up" data-name="emma yates" data-role="psychotherapeutic counsellor couples" data-creds="bacp">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/09/Emma-Yates.png" alt="Emma Yates — Psychotherapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Emma Yates</h3>
+        <p class="therapist-role">Psychotherapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BACP · Couples Therapist
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/emma-yates/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- HELEN O'CONOR -->
+    <article class="therapist-card fade-up" data-name="helen oconor" data-role="chartered forensic psychologist" data-creds="bps hcpc msc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/10/Well-Connections-Helen-OConnor.png" alt="Helen O'Conor — Chartered Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Helen O'Conor</h3>
+        <p class="therapist-role">Chartered Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BPS · HCPC · C.Psychol · MSc · BSc (Hons)
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/helen-oconor/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- JENNIFER CARLIN -->
+    <article class="therapist-card fade-up" data-name="jennifer carlin" data-role="chartered psychologist adhd autism" data-creds="hcpc bps msc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/05/JENNIFER-CARLIN-768x768.png" alt="Jennifer Carlin — Chartered Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Jennifer Carlin</h3>
+        <p class="therapist-role">Chartered Psychologist <span style="background:var(--teal-light);color:var(--teal);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:2px;letter-spacing:0.06em;font-weight:500;margin-left:0.3rem;">ADHD / Autism</span></p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC Registered · CPsychol · BSc · MSc
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/jennifer-carlin/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- JO CHEETHAM -->
+    <article class="therapist-card fade-up" data-name="jo cheetham" data-role="forensic psychologist" data-creds="bps hcpc msc pgd">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/03/Jo-Cheetham2.png" alt="Jo Cheetham — Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Jo Cheetham</h3>
+        <p class="therapist-role">Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BPS · HCPC · PgD · MSc · BSc (Hons)
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/jo-cheetham/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- JO MERIDITH -->
+    <article class="therapist-card fade-up" data-name="jo meridith" data-role="counsellor clinical supervisor" data-creds="ncps diploma">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/10/Well-Connections-Jo-Meredith.png" alt="Jo Meridith — Counsellor and Clinical Supervisor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Jo Meridith</h3>
+        <p class="therapist-role">Counsellor &amp; Clinical Supervisor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          NCPS · Advanced Diploma
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/jo-meridith/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- JONATHAN HOLMES -->
+    <article class="therapist-card fade-up" data-name="jonathan holmes" data-role="psychotherapeutic counsellor" data-creds="ukcp mbacp dpc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Jonathan-Holmes.png" alt="Jonathan Holmes — Psychotherapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Jonathan Holmes</h3>
+        <p class="therapist-role">Psychotherapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          UKCP · MBACP · DPC CYP
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/jonathan-holmes/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- LAURA KEAY -->
+    <article class="therapist-card fade-up" data-name="laura keay" data-role="integrative psychotherapist emdr" data-creds="ukcp mbacp msc emdr">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Laura-Keay.png" alt="Laura Keay — Integrative Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Laura Keay</h3>
+        <p class="therapist-role">Integrative Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          UKCP · MBACP · MSc Int.Psych · BA (Hons) · PG Dip · Dip Psych · DPC Adult &amp; CYP · EMDR Children &amp; Adults
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/laura-keay/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- LEAH PRYSCE -->
+    <article class="therapist-card fade-up" data-name="leah prysce" data-role="integrative counsellor psychotherapist" data-creds="bacp postgraduate diploma">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/09/Leah-Prysce.png" alt="Leah Prysce — Integrative Counsellor and Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Leah Prysce</h3>
+        <p class="therapist-role">Integrative Counsellor &amp; Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          Registered Member BACP · Postgraduate Diploma in Counselling &amp; Psychotherapy
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/leah-prysce/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- LISA GARLAND -->
+    <article class="therapist-card fade-up" data-name="lisa garland" data-role="chartered occupational psychologist" data-creds="hcpc bps msc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/12/Lisa-Garland-1.png" alt="Lisa Garland — Chartered Occupational Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Lisa Garland</h3>
+        <p class="therapist-role">Chartered Occupational Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC Registered · BPS Chartered Member · MSc · BSc · CPsycol
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/lisa-garland/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- LISA MCKENDRICK -->
+    <article class="therapist-card fade-up" data-name="lisa mckendrick" data-role="registered forensic psychologist" data-creds="hcpc msc pgdip">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/12/Lisa-McKendrick.png" alt="Lisa McKendrick — Registered Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Lisa McKendrick</h3>
+        <p class="therapist-role">Registered Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC Registered · BSc (Hons) · MSc Applied Forensic Psychology · PgDip Forensic Psychology
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/lisa-mckendrick/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- NANCY HILL -->
+    <article class="therapist-card fade-up" data-name="nancy hill" data-role="drama therapist" data-creds="hcpc badth ma">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Nancy-Hill.png" alt="Nancy Hill — Drama Therapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Nancy Hill</h3>
+        <p class="therapist-role">Drama Therapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC · BADth · MA
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/nancy-hill/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- NATASCHA GONNERMANN -->
+    <article class="therapist-card fade-up" data-name="natascha gonnermann" data-role="psychotherapist" data-creds="ukcp mbacp ba diploma pgdip">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/10/The-Harlow-Natascha.png" alt="Natascha Gonnermann — Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Natascha Gonnermann</h3>
+        <p class="therapist-role">Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          UKCP · MBACP · BA (Hons) · Diploma Psychodynamic Counselling · PG Dip Psychotherapy
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/natascha-gonnermann/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- NINA PRESTON -->
+    <article class="therapist-card fade-up" data-name="nina preston" data-role="consultant forensic psychologist" data-creds="hcpc bps msc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Nina-Preston-1.png" alt="Nina Preston — Consultant Forensic Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Nina Preston</h3>
+        <p class="therapist-role">Consultant Forensic Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          HCPC · BPS · BSc · MSc · C.Psychol · AFBPsS · CSci
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/nina-preston/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- SARA CASWELL -->
+    <article class="therapist-card fade-up" data-name="sara caswell" data-role="psychotherapeutic counsellor" data-creds="ukcp mbacp dpc">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Sara-Caswell.png" alt="Sara Caswell — Psychotherapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Sara Caswell</h3>
+        <p class="therapist-role">Psychotherapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          UKCP · MBACP · DPC
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/sara-caswell/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- SARAH LATHAM -->
+    <article class="therapist-card fade-up" data-name="sarah latham" data-role="psychotherapeutic counsellor" data-creds="bacp">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Sarah-Latham.png" alt="Sarah Latham — Psychotherapeutic Counsellor" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Sarah Latham</h3>
+        <p class="therapist-role">Psychotherapeutic Counsellor</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BACP
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/sarah-latham/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- SARAH WILSON -->
+    <article class="therapist-card fade-up" data-name="sarah wilson" data-role="chartered counselling psychologist" data-creds="bps hcpc dcouns psy">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Sarah-Wilson.png" alt="Sarah Wilson — Chartered Counselling Psychologist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Sarah Wilson</h3>
+        <p class="therapist-role">Chartered Counselling Psychologist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          BPS · HCPC · D.Couns.Psy · PgDip · BSc (Hons)
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/sarah-wilson/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- STELLA FORSTER -->
+    <article class="therapist-card fade-up" data-name="stella forster" data-role="integrative counsellor psychotherapist" data-creds="bacp llb ma pgdip">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2025/09/Stella-Forster.png" alt="Stella Forster — Integrative Counsellor and Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Stella Forster</h3>
+        <p class="therapist-role">Integrative Counsellor &amp; Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          LLB · BLitt (Psychology) · PGDip Counselling &amp; Psychotherapy · MA Integrative Counselling · BACP
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/stella-forster/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- SUSANNAH JAEGER -->
+    <article class="therapist-card fade-up" data-name="susannah jaeger" data-role="psychotherapist" data-creds="ukcp mbacp bsc diploma pgdip">
+      <img class="therapist-img" src="https://wellconnections.co.uk/wp-content/uploads/2024/10/Well-Connections-Susannah-Jaeger.png" alt="Susannah Jaeger — Psychotherapist" loading="lazy" />
+      <div class="therapist-body">
+        <h3 class="therapist-name">Susannah Jaeger</h3>
+        <p class="therapist-role">Psychotherapist</p>
+        <div class="therapist-creds">
+          <strong>Qualifications &amp; Accreditations</strong>
+          UKCP · MBACP · BSc · Diploma · PG Diploma
+        </div>
+      </div>
+      <div class="therapist-footer">
+        <a href="https://wellconnections.co.uk/therapist/susannah-jaeger/" class="therapist-link" target="_blank" rel="noopener">
+          Read profile <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="noResults" role="status" aria-live="polite">
+      <p>No therapists found matching your search. <a href="#" id="clearSearch" style="color:var(--teal);">Clear search</a></p>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ═══ CTA BAND ═══ -->
+<section class="cta-band" aria-labelledby="cta-heading">
+  <h2 id="cta-heading">Not sure who's right<br /><em>for your child?</em></h2>
+  <p>We personally match every family with the most suitable therapist. Book a free consultation and we'll guide you through it.</p>
+  <div class="cta-band-btns">
+    <a href="https://calendly.com/wellconnections/consultation" class="btn-primary" target="_blank" rel="noopener">Book a Free 20-Min Call</a>
+    <a href="mailto:info@wellconnections.co.uk" class="btn-outline">Email Us</a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <p>© 2024 Well Connections. All rights reserved.</p>
+  <p>
+    Designed by <a href="https://www.franks-media.co.uk" target="_blank" rel="noopener">Franks Media</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:info@wellconnections.co.uk">info@wellconnections.co.uk</a>
+    &nbsp;·&nbsp;
+    <a href="tel:07725035029">07725 035029</a>
+  </p>
+</footer>
+
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}</style>
+
+<script>
+  // Nav scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+
+  // Fade-up
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Live search/filter
+  const searchInput = document.getElementById('therapistSearch');
+  const cards = document.querySelectorAll('.therapist-card');
+  const countEl = document.getElementById('filterCount');
+  const noResults = document.getElementById('noResults');
+  const clearSearch = document.getElementById('clearSearch');
+  const total = cards.length;
+
+  function filterCards() {
+    const q = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const text = (card.dataset.name + ' ' + card.dataset.role + ' ' + card.dataset.creds + ' ' + card.textContent).toLowerCase();
+      const show = !q || text.includes(q);
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.innerHTML = q
+      ? `Showing <strong>${visible}</strong> of ${total} therapists`
+      : `Showing <strong>${total}</strong> therapists`;
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  searchInput.addEventListener('input', filterCards);
+  clearSearch && clearSearch.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchInput.value = '';
+    filterCards();
+    searchInput.focus();
+  });
+</script>
+
+</body>
+</html>
