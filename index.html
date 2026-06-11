@@ -170,7 +170,11 @@
       cursor: pointer;
       flex-direction: column;
       gap: 5px;
-      padding: 4px;
+      padding: 10px;
+      min-width: 44px;
+      min-height: 44px;
+      justify-content: center;
+      align-items: center;
     }
     .nav-hamburger span {
       display: block;
@@ -960,6 +964,9 @@
       border-bottom: 1px solid var(--stone);
       font-size: 0.95rem;
       font-weight: 300;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
     }
     .mobile-menu a:last-child { border-bottom: none; }
     .mobile-menu .mobile-cta {
@@ -973,16 +980,35 @@
       border: none;
     }
 
-    /* ── RESPONSIVE ── */
+    /* ── PREVENT iOS ZOOM ON FOCUS ── */
+    @media (max-width: 768px) {
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        font-size: 16px;
+      }
+    }
+
+    /* ── RESPONSIVE: TABLET (≤900px) ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
-      .nav-hamburger { display: flex; }
+      .nav-hamburger {
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        justify-content: center;
+        align-items: center;
+      }
 
       .about-split,
       .steps,
-      .locations-wrap,
-      .cta-inner,
-      #organisations > div { grid-template-columns: 1fr; gap: 3rem; }
+      .locations-wrap { grid-template-columns: 1fr; gap: 3rem; }
+
+      /* Override inline-styled organisations grid */
+      .orgs-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+
+      /* Override inline-styled cta-inner */
+      .cta-inner { grid-template-columns: 1fr; gap: 2.5rem; }
 
       .services-grid { grid-template-columns: 1fr 1fr; }
 
@@ -992,27 +1018,97 @@
       .steps::before { display: none; }
 
       .form-row { grid-template-columns: 1fr; }
+
+      /* Team preview strip: stack on tablet */
+      #team-preview-section-inner {
+        flex-direction: column !important;
+        gap: 2rem !important;
+        text-align: center;
+      }
+      #team-preview-section-inner > div:last-child {
+        justify-content: center !important;
+      }
     }
 
+    /* ── RESPONSIVE: MOBILE (≤600px) ── */
     @media (max-width: 600px) {
-      section { padding: 4rem 5%; }
-      .services-section { padding: 4rem 5%; }
+      /* Sections */
+      section { padding: 3.5rem 5%; }
+      .services-section { padding: 3.5rem 5%; }
       .services-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+      /* Hero */
+      .hero { min-height: 100svh; min-height: 100vh; }
       .hero-content { padding: 0 5%; }
       .hero-actions { flex-direction: column; align-items: stretch; }
-      .btn-primary, .btn-secondary { text-align: center; }
-      .trust-bar { gap: 1rem 2rem; padding: 1.2rem 5%; justify-content: flex-start; }
+      .btn-primary, .btn-secondary { text-align: center; padding: 1rem 1.5rem; }
+
+      /* Trust bar: 2 columns on small phones */
+      .trust-bar {
+        gap: 0.75rem 1.5rem;
+        padding: 1.25rem 5%;
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
       .trust-item { font-size: 0.75rem; }
-      .cta-inner { gap: 2.5rem; }
+
+      /* About */
       .about-image-badge { display: none; }
       .about-image-accent { display: none; }
-      .nav-logo img { height: 58px; }
-      .service-card { padding: 1.75rem 1.5rem; }
+      .about-image-wrap img { aspect-ratio: 3/2; }
+
+      /* Nav */
+      .nav-logo img { height: 54px; }
+      nav { height: 74px; }
+      .mobile-menu { top: 74px; }
+
+      /* Service cards */
+      .service-card { padding: 1.5rem; }
+
+      /* Contact section */
+      .cta-inner { gap: 2rem; }
+      .contact-method {
+        font-size: 0.88rem;
+        word-break: break-all;
+      }
+      .contact-method[href^="mailto"] { word-break: break-word; }
+
+      /* Map */
+      .locations-wrap iframe { height: 280px; }
+
+      /* Testimonial */
+      .testimonial-section { padding: 4rem 5%; }
+      .testimonial-inner blockquote { font-size: 1.3rem; }
+
+      /* How it works */
+      .how-header { margin-bottom: 2.5rem; }
+
+      /* Team preview strip avatars */
+      .team-avatar-row {
+        justify-content: center !important;
+      }
+
+      /* Section padding overrides */
+      #organisations { padding: 3.5rem 5% !important; }
+      #team-preview-section-inner { gap: 2rem !important; flex-wrap: wrap !important; }
+
+      /* Services CTA row */
+      .services-cta-row > div {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      /* Enquiry form */
+      .enquiry-form { padding: 1.5rem; }
     }
 
-    @media (max-width: 400px) {
-      .trust-bar { flex-direction: column; gap: 0.6rem; }
-      .hero h1 { font-size: 2.4rem; }
+    /* ── RESPONSIVE: SMALL MOBILE (≤420px) ── */
+    @media (max-width: 420px) {
+      .trust-bar { grid-template-columns: 1fr; gap: 0.6rem; }
+      .hero h1 { font-size: 2.3rem; }
+      .section-title { font-size: 1.8rem; }
+      .testimonial-inner blockquote { font-size: 1.2rem; }
     }
 
     /* ── FADE-IN ANIMATIONS ── */
@@ -1211,8 +1307,8 @@
 </section>
 
 <!-- ═══ TEAM PREVIEW STRIP ═══ -->
-<section aria-labelledby="team-preview-heading" style="background:var(--bark-dark);padding:3.5rem 5%;">
-  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:3rem;flex-wrap:wrap;">
+<section id="team-preview" aria-labelledby="team-preview-heading" style="background:var(--bark-dark);padding:3.5rem 5%;">
+  <div id="team-preview-section-inner" style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:3rem;flex-wrap:wrap;">
     <div style="flex:1;min-width:240px;">
       <span style="display:inline-block;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sage-light);font-weight:500;margin-bottom:0.8rem;">Our Therapists</span>
       <h2 id="team-preview-heading" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:300;color:#fff;line-height:1.2;margin-bottom:0.75rem;">26 specialist therapists<br /><em style="font-style:italic;color:var(--sage-light);">personally vetted by us.</em></h2>
@@ -1309,7 +1405,7 @@
 
 <!-- ═══ ORGANISATIONS ═══ -->
 <section id="organisations" aria-labelledby="orgs-heading" style="padding:5rem 5%;background:#fff;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+  <div class="orgs-grid" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
     <div class="fade-up">
       <span class="section-label">Companies &amp; Organisations</span>
       <h2 id="orgs-heading" class="section-title">Support for<br /><em>workplaces too.</em></h2>
